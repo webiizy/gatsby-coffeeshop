@@ -10,9 +10,16 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import "./bootstrap.min.css"
-//import "./layout.css"
+import "./layout.css"
 
-const Layout = ({ children }) => <>{children}</>
+import NavBar from "../components/globals/NavBar2"
+
+const Layout = ({ children }) => (
+  <>
+    <NavBar />
+    {children}
+  </>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
