@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import logo from "../../images/logo.svg"
 import { Link } from "gatsby"
+import { FaCartArrowDown } from "react-icons/fa"
 import {
   Collapse,
   Navbar,
@@ -57,6 +58,9 @@ export default class NavBar extends Component {
                   </NavItem>
                 )
               })}
+              <NavItem className="nav-item ml-sm-5">
+                <FaCartArrowDown className="cart-icon" />
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
